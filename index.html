@@ -42,31 +42,21 @@
         }
         </script>
     
-    <div id="weather-v2-plugin-simple"></div>
+        <div id="tp-weather-widget"></div>
     <script>
-    WIDGET = {
-      CONFIG: {
-        "modules": "0124",
-        "background": 1,
-        "tmpColor": "F5E5E5",
-        "tmpSize": 16,
-        "cityColor": "C1E4EE",
-        "citySize": 16,
-        "aqiSize": 16,
-        "weatherIconSize": 24,
-        "alertIconSize": 18,
-        "padding": "10px 10px 10px 10px",
-        "shadow": "1",
-        "language": "zh",
-        "borderRadius": 5,
-        "fixed": "false",
-        "vertical": "middle",
-        "horizontal": "center",
-        "key": "LUHKy4is9c"
-      }
-    }
+    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+    window.SeniverseWeatherWidget('show', {
+        flavor: "bubble",
+        location: "WQJ6YY8MHZP0",
+        geolocation: true,
+        language: "zh-Hans",
+        unit: "c",
+        theme: "auto",
+        token: "614cd510-fa86-42dc-95d4-41740ba95b27",
+        hover: "enabled",
+        container: "tp-weather-widget"
+    })
     </script>
-    <script src="https://apip.weatherdt.com/simple/static/js/weather-simple-common.js?v=2.0"></script>
     
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
@@ -553,7 +543,7 @@
     
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            不是没有梦想，只是不想继续当FW！0.0
+            成为一只不会敲代码的废喵！(*¯︶¯*)
         </div>
     </div>
 </div>
